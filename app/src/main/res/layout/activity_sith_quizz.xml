@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cl.ramces.jedisithquizz.SithQuizzActivity"
+    android:background="#D32F2F">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ForgiveTv"
+                android:text="Cual te costaria perdonar ??"
+                style="@style/TextView"/>
+            <RadioGroup
+                android:id="@+id/ForgiveRg"
+                android:layout_below="@+id/ForgiveTv"
+                style="@style/RadioGroup">
+
+                <RadioButton
+                    android:text="Que alguien traicione mi confianza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="Que me miren por encima del hombro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="Podria perdonar las dos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/EnemiesTv"
+                android:text="Cuantos enemigos tienes ??"
+                style="@style/TextView"
+                android:layout_below="@+id/ForgiveRg"/>
+
+            <RadioGroup
+                style="@style/RadioGroup"
+                android:id="@+id/EnemiesRg"
+                android:layout_below="@+id/EnemiesTv">
+
+                <RadioButton
+                    android:text="Muchos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="Algunos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="Creo que no tengo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/HaveTv"
+                android:text="Que crees que tiene mas peso en los logros ??"
+                style="@style/TextView"
+                android:layout_below="@+id/EnemiesRg"/>
+            <RadioGroup
+                android:id="@+id/HaveRg"
+                android:layout_below="@+id/HaveTv"
+                style="@style/RadioGroup">
+
+                <RadioButton
+                    android:text="El talento nato de cada uno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="Las horas invertidas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="No lo tengo claro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/SendSithBtn"
+                android:text="Enviar"
+                android:layout_below="@+id/HaveRg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

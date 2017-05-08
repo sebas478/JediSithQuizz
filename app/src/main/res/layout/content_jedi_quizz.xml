@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cl.ramces.jedisithquizz.JediQuizzActivity"
+    tools:showIn="@layout/activity_jedi_quizz">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/WhereTv"
+            style="@style/TextView"
+            android:text="Donde preferirias vivir ??"/>
+
+        <RadioGroup
+            android:layout_below="@+id/WhereTv"
+            android:id="@+id/WhereRg"
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:text="En una casa en el campo, con un pequeño huerto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:text="En un rascacielos en Nueva York"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/LuckyTv"
+            android:layout_below="@+id/WhereRg"
+            android:text="Crees que has tenido suerte en tu vida"
+            style="@style/TextView"/>
+
+        <RadioGroup
+            android:layout_below="@+id/LuckyTv"
+            android:id="@+id/LuckyRg"
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:text="Creo que he tenido mucha suerte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:text="Desearia tener mas suerte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="No lo tengo claro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/SentenceTv"
+            android:layout_below="@+id/LuckyRg"
+            android:text="Que frase podrias decir ??"
+            style="@style/TextView"/>
+
+        <RadioGroup
+            android:layout_below="@+id/SentenceTv"
+            android:id="@+id/SentenceRg"
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:text="La mayoria de la gente es buena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:text="La mayoria de la gente es estupida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:text="No pienso ninguna de esas cosas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_below="@+id/SentenceRg"
+            android:id="@+id/SendBtn"
+            android:text="Enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="SithQuizz"
+            android:id="@+id/SithQuizzBtn"
+            android:layout_below="@+id/SendBtn"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+      </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
+
